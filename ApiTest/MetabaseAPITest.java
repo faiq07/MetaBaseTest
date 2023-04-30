@@ -85,7 +85,7 @@ public class MetabaseAPITest {
 
         System.out.println("Test passed");
     }
-    
+
     @Test
     void testGetSettingsOfUser() {
         RestAssured.given().header("X-Metabase-Session", API_TOKEN)
@@ -98,4 +98,58 @@ public class MetabaseAPITest {
 
         System.out.println("Test passed");
     }
+
+    @Test
+    void testGetAllUsersEmail() {
+        RestAssured.given().header("X-Metabase-Session", API_TOKEN)
+                .accept("application/json")
+                .when()
+                .delete("http://localhost:3000/api/email/")
+                .then()
+                .statusCode(204)
+                .assertThat()
+                .log().all();
+
+        System.out.println("Test passed");
+    }
+
+    @Test
+    void testGetAllUsersegmet() {
+        RestAssured.given().header("X-Metabase-Session", API_TOKEN)
+                .accept("application/json")
+                .when()
+                .get("http://localhost:3000/api/segment/")
+                .then()
+                .assertThat()
+                .log().all();
+        System.out.println("Test passed");
+    }
+
+    @Test
+    void testGetAllUserAction() {
+        RestAssured.given().header("X-Metabase-Session", API_TOKEN)
+                .accept("application/json")
+                .when()
+                .get("http://localhost:3000/api/action")////https://www.metabase.com/docs/latest/api/public
+                .then()
+                .assertThat()
+                .log().all();
+
+        System.out.println("Test passed");
+    }
+
+    @Test
+    void testGetAllUsers() {
+        RestAssured.given().header("X-Metabase-Session", API_TOKEN)
+                .accept("application/json")
+                .when()
+                .get("http://localhost:3000/api/user/")////https://www.metabase.com/docs/latest/api/public
+                .then()
+                .assertThat()
+                .log().all();
+
+        System.out.println("Test passed");
+
+    }
+
 }
