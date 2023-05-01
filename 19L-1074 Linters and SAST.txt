@@ -1,0 +1,17 @@
+Linters and SAST are two types of tools commonly used in software development to ensure code quality and security.
+
+A linter is a tool that analyzes source code to detect and flag potential issues such as syntax errors, formatting inconsistencies, 
+and other violations of best practices. Linters are often used to enforce a consistent coding style across a team or to catch simple 
+errors before they become more serious issues.
+
+On the other hand, SAST is a security testing tool that scans source code or compiled binaries for potential security vulnerabilities. 
+SAST analyzes the code at rest, rather than during runtime, and can detect issues such as buffer overflows, SQL injection, and cross-site scripting (XSS).
+
+Both linters and SAST are automated tools that can help to identify issues early in the software development lifecycle, 
+improving code quality and reducing the likelihood of bugs or security vulnerabilities being introduced later in the development process.
+
+While linters focus on code quality and readability, SAST focuses on security. Linters can help to ensure that code is consistent and maintainable, 
+while SAST can help to ensure that code is secure and free of vulnerabilities.
+
+In summary, linters and SAST are complementary tools that can help to improve the quality and security of code. 
+Linters focus on ensuring that code is readable and maintainable, while SAST focuses on ensuring that code is secure and free of vulnerabilities.
