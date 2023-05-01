@@ -15,3 +15,6 @@ while SAST can help to ensure that code is secure and free of vulnerabilities.
 
 In summary, linters and SAST are complementary tools that can help to improve the quality and security of code. 
 Linters focus on ensuring that code is readable and maintainable, while SAST focuses on ensuring that code is secure and free of vulnerabilities.
+
+Here is the link of how I add Linters and SAST in my project and what I understant
+https://www.loom.com/share/7847d7688d4d4f679ca9129c358b32c7
